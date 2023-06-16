@@ -1,0 +1,151 @@
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+    :root {
+        --primary-color: #4caf50;
+        --secondary-color: #5cd561;
+        --background-color: #1d1e22;
+        --disabled-color: #2a622d;
+        --text-color: #fff;
+        --panel-color: #333;
+        --hover-color: #3e3e3e;
+        --button-radius: 15px;
+        --message-radius: 10px;
+        --transition-duration: 200ms;
+        --scrollbar-width: 10px;
+        --scrollbar-thumb-color: #444;
+        --scrollbar-thumb-hover-color: #4b4b4b;
+    }
+
+
+
+    body {
+        /* background-color: var(--background-color); */
+    }
+
+    .msg-panel {
+        /* background: url("/assets/background_blur.png"); */
+        height: calc(100vh - 1.21in);
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .msg-panel .msg {
+        padding: 10px 7px;
+        margin-top: 15px;
+        background-color: var(--primary-color);
+        opacity: 0;
+        width: max-content;
+        max-width: 5in;
+        word-wrap: break-word;
+        border-radius: var(--message-radius);
+        display: block;
+        white-space: pre-wrap;
+        position: relative;
+        transition: var(--transition-duration);
+        transition-property: opacity, margin;
+        color: white;
+        font-size: 1.1em;
+     
+    }
+  
+    .msg-panel .msgResponse {
+        padding: 10px 7px;
+        margin-top: 15px;
+        background-color: var(--primary-color);
+        opacity: 0;
+        width: max-content;
+        max-width: 5in;
+        word-wrap: break-word;
+        border-radius: var(--message-radius);
+        display: block;
+        white-space: pre-wrap;
+        position: relative;
+        transition: var(--transition-duration);
+        transition-property: opacity, margin;
+        color: #fff;
+        font-size: 1.1em;
+        position: relative;
+        right: 0%;
+    }
+
+    #clear:hover {
+        background-color: var(--secondary-color);
+    }
+
+    #clear:disabled {
+        background-color: var(--disabled-color);
+        cursor: not-allowed;
+    }
+
+    .dock {
+        position: absolute;
+        display: flex;
+        gap: 5px;
+        width: calc(100% - 17px);
+        bottom: 10px;
+    }
+
+    input,
+    button {
+        border: none;
+        background-color: #fff;
+        border-radius: var(--button-radius);
+        padding: 15px 20px;
+        outline: none;
+        font-size: 20px;
+        resize: none;
+        transition: var(--transition-duration);
+        transition-property: background, box-shadow;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    input:focus {
+        box-shadow: 0 0 0 3px var(--secondary-color);
+    }
+
+    input:hover {
+    }
+
+    button {
+        background-color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--secondary-color);
+    }
+
+    button:disabled {
+        background-color: var(--disabled-color);
+        cursor: not-allowed;
+    }
+
+    a {
+        font-weight: bold;
+    }
+
+    img {
+        border-radius: var(--message-radius);
+    }
+
+    ::-webkit-scrollbar {
+        width: var(--scrollbar-width);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--scrollbar-thumb-color);
+        border-radius: var(--message-radius);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--scrollbar-thumb-hover-color);
+    }
+    nav{
+    }
