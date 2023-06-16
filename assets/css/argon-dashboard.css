@@ -80,6 +80,11 @@
 *::after {
   box-sizing: border-box;
 }
+body{
+  /* background-image: linear-gradient(to right top, #e4b7d1, #dbb4d6, #cfb2dc, #c0b1e1, #afb1e4, #a3b7e8, #98bdea, #8fc3ea, #94cfea, #a0d9e9, #afe3e8, #c2ece9); */
+  background: url("/assets/background_blur.png");
+  background-position: fixed;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -10580,7 +10585,7 @@ fieldset:disabled .btn {
 }
 
 .bg-primary {
-  background-color: #5e72e4 !important;
+  /* background-color: #5e72e4 !important; */
 }
 
 .bg-secondary {
@@ -26307,7 +26312,7 @@ span.flatpickr-weekday {
 .flatpickr-calendar .flatpickr-day.selected,
 .flatpickr-calendar .flatpickr-day.startRange,
 .flatpickr-calendar .flatpickr-day.endRange {
-  background: #5e72e4 !important;
+  /* background: #5e72e4 !important; */
   color: #fff;
   border: none;
 }
