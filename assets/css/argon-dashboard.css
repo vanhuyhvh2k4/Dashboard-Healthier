@@ -81,8 +81,9 @@
   box-sizing: border-box;
 }
 body{
-  /* background-image: linear-gradient(to right top, #e4b7d1, #dbb4d6, #cfb2dc, #c0b1e1, #afb1e4, #a3b7e8, #98bdea, #8fc3ea, #94cfea, #a0d9e9, #afe3e8, #c2ece9); */
-  background: url("/assets/background_blur.png");
+  /* background-image: linear-gradient(to right top, #f0d8d8, #f3ddd9, #f5e3dc, #f7e8df, #f8eee3, #faeee4, #fceee5, #feeee7, #feeaea, #f9e7f0, #eee6f6, #dfe6f8); */
+  background: url("/Dashboard-Healthier/assets/background_blur.png");
+  background-size: cover;
   background-position: fixed;
 }
 
