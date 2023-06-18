@@ -4,7 +4,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
+ :root {
   --bs-blue: #63B3ED;
   --bs-indigo: #596CFF;
   --bs-purple: #6f42c1;
@@ -4010,6 +4010,17 @@ fieldset:disabled .btn {
 .fade:not(.show) {
   opacity: 0;
 }
+
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  padding: 1.5 rem;
+}
+
 
 .collapse:not(.show) {
   display: none;
@@ -26938,5 +26949,13 @@ pre[class*="language-"] {
     overflow: auto !important;
   }
 }
+
+
+main {
+  background: url("/assets/background_blur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ }
 
 /*# sourceMappingURL=dashboard-free.css.map */
